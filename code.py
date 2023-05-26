@@ -11,8 +11,10 @@ def func(x):
 
 a = -1 #начало отрезка
 b = 2 #конец отрезка
-n = 100 #число разбиений
-equipment = "random" #right/left/middle/random (оснащение)
+print("Введите число разбиений")
+n = int(input()) #число разбиений
+print("Введите оснащение (right/left/middle/random)")
+equipment = str(input()) #right/left/middle/random (оснащение)
 
 segment = np.arange(a, b, (b-a)/n)
 segment = list(segment)             #отрезок интегрирования
